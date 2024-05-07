@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <!-- App Description Text -->
+    <TextView
+        android:id="@+id/app_description1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Welcome to Drive To NSU"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/app_description2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app helps you navigate by car from your current location to North South University. Press the button below to see the route on Google Maps."
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_below="@id/app_description1"
+        android:layout_marginBottom="100dp"
+        />
+
+    <!-- Drive to NSU Button -->
+    <Button
+        android:id="@+id/btnDriveToNSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drive to NSU"
+        android:layout_below="@id/app_description2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@color/black"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+         />
+
+
+
+</RelativeLayout>
